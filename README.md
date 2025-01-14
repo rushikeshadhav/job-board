@@ -180,3 +180,7 @@ Delete a job posting by ID.
 - Returns a success message.
 
 ---
+
+**Deployement**
+- Server has been deployed on Vercel
+- Database has been deployed on https://www.freesqldatabase.com/freemysqldatabase/
