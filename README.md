@@ -17,7 +17,6 @@ A simple backend API for a job board built with Node.js, TypeScript, and MySQL. 
 
 - **Backend**: Node.js with TypeScript
 - **Database**: MySQL
-- **ORM**: Prisma
 - **API Documentation**: Swagger
 - **Development**: `ts-node-dev` for live development
 - **Deployment**: Vercel
@@ -59,15 +58,6 @@ Before you begin, ensure you have the following installed:
    ```
    DATABASE_URL="mysql://username:password@localhost:3306/job_board"
    ```
-
-4. Run the database migrations:
-
-   ```bash
-   npx prisma migrate dev
-   ```
-
-   This will set up your MySQL database schema based on the Prisma model.
-
 ### Development
 
 To start the application in development mode, run:
@@ -106,7 +96,7 @@ yarn start
 
 ### API Documentation (Swagger)
 
-You can access the API documentation by visiting `http://localhost:3000/docs` once the server is running.
+You can access the API documentation by visiting `http://localhost:3000/api-docs` once the server is running.
 
 ---
 
@@ -190,25 +180,3 @@ Delete a job posting by ID.
 - Returns a success message.
 
 ---
-
-## Deployment
-
-### Deploy on Vercel
-
-1. Push your code to GitHub.
-2. Sign in to [Vercel](https://vercel.com/).
-3. Create a new project and link it to your GitHub repository.
-4. Set the environment variables in Vercel (`DATABASE_URL` for MySQL).
-5. Vercel will automatically deploy your application.
-
----
-
-## Contributing
-
-Contributions are welcome! Feel free to fork this repository, create a branch, and submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
