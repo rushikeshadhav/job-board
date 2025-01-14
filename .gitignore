@@ -1,1 +1,11 @@
-node_modules
+# Node.js dependencies
+/node_modules
+
+# TypeScript output directory
+/dist
+
+# Logs
+*.log
+
+# Environment variables
+.env
