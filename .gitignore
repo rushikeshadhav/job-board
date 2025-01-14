@@ -8,4 +8,4 @@
 *.log
 
 # Environment variables
-.env
+.vercel
